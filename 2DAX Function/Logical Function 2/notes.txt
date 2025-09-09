@@ -1,0 +1,10 @@
+load 3. LogicalSample.xlsx > logical2data
+
+Status = IF(Logical2Data[Physics]>=40, "Pass","Fail")
+
+Output1 = IF(AND(Logical2Data[Maths]> 80,Logical2Data[Physics]> 80),"Excellent","OK")
+
+Output2 = IF(OR(Logical2Data[Maths]> 80, Logical2Data[Physics]> 80),"Very Good", "OK")
+
+Result = IF(NOT(Logical2Data[Maths] > 50),"50 is not greater","50 is greater")
+

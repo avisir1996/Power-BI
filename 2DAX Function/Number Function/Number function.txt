@@ -1,0 +1,6 @@
+-> Number/ Aggregate Functions:
+- Sum => sum1=sum(Text1Data[profit])
+- Max => max1=max(Text1Data[profit])
+- Min => min1=min(Text1Data[profit])
+- Count => count1=count(Text1Data[profit])
+- Average => avg1=Average(Text1Data[profit])

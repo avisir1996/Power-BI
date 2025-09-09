@@ -1,0 +1,16 @@
+load samplesuperstore
+
+home tab > new measure
+First Date = FIRSTDATE(Orders[Order Date])
+card>fields>first date
+goto measurement tools>formatting>short date
+
+Last Date = LASTDATE(Orders[Order Date])
+card>fields>last date
+goto measurement tools>formatting>short date
+
+Dates Between = CALCULATE(SUM(Orders[Sales]),DATESBETWEEN(Orders[Order Date],"2-1-2019","2-1-2020"))
+card>fields>Dates Between
+
+DIP = CALCULATE(SUM(Orders[Sales]),DATESINPERIOD(Orders[Order Date],"2-1-2019",3,DAY))
+card>fields>DIP

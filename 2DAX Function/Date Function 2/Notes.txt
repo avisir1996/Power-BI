@@ -1,0 +1,11 @@
+load 1. DateSample.xlsx
+
+Difference = DATEDIFF(Orders[Order Date].[Date],Orders[Ship Date].[Date],DAY)
+
+MyAge = DATEDIFF(DATE(1996,12,22),TODAY(),YEAR)
+
+Add5Days = DATEADD(Orders[Order Date].[Date],5,DAY)
+
+StartofMonth = STARTOFMONTH(Orders[Order Date].[Date])
+
+ENDOFNEXTMONTH = EOMONTH(Orders[Order Date].[Date],2)

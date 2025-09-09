@@ -1,0 +1,72 @@
+1. IF Function
+Create a new column that categorizes customers as "High Value" if their total purchases are over 10,000, otherwise "Regular".
+
+2. IF with AND Function
+Classify employees as "Eligible" for promotion if they have more than 5 years of experience and performance rating above 4.
+
+3. IF with OR Function
+Mark sales transactions as "Flagged" if the transaction is above 10000 or the discount given is more than 20%.
+
+4. SWITCH Function
+Assign a grade based on a numeric score:
+90-100: "A"
+80-89: "B"
+70-79: "C"
+Below 70: "F"
+
+5. COALESCE Function
+Use the first non-blank value among three possible columns: PreferredEmail, SecondaryEmail, and WorkEmail.
+
+6. IFERROR Function
+Safely divide sales by quantity, but return 0 if there's a division error (e.g., quantity is zero).
+
+7. IN with IF
+Label items as "Luxury" if their category is either "Jewelry", "Watches", or "Designer Bags"
+
+
+Solutions:
+1)
+CustomerCategory = 
+CustomerCategory = IF(Customers[TotalPurchases] > 10000, "High Value", "Regular")
+
+2)
+PromotionStatus = 
+IF(
+    AND(Employees[YearsExperience] > 5, Employees[Rating] > 4),
+    "Eligible",
+    "Not Eligible"
+)
+
+3)
+TransactionFlag = 
+IF(
+    OR(Sales[Amount] > 10000, Sales[DiscountPercent] > 20),
+    "Flagged",
+    "OK"
+)
+
+4)
+Grade = 
+SWITCH(
+    TRUE(),
+    Students[Score] >= 90, "A",
+    Students[Score] >= 80, "B",
+    Students[Score] >= 70, "C",
+    "F"
+)
+
+5)
+ContactEmail = 
+COALESCE(Customers[PreferredEmail], Customers[SecondaryEmail], Customers[WorkEmail])
+
+6)
+SafePrice = 
+IFERROR(Sales[TotalAmount] / Sales[Quantity], 0)
+
+7)
+ItemType = 
+IF(
+    Sales[Category] IN {"Jewelry", "Watches", "Designer Bags"},
+    "Luxury",
+    "Standard"
+)

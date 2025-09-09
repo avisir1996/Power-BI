@@ -1,0 +1,59 @@
+# Function in Power Bi: (Measures)
+# Calculate Function: 
+# Syntax:
+-> Calculate(Expression,Filter,[Filter]...)
+
+Note: 
+- Expression : (Must in Aggregation form - so use functions like - Sum of, Average of , Count of, Max or min of etc.)
+- Filter : Just pass the column name with logical operator (> , <, =, >=, <=, <>)......
+
+-> TechProfit = CALCULATE(SUM(Orders[Profit]),Orders[Category]="Technology")
+-> 2022Profit = CALCULATE(SUM(Orders[Profit]),YEAR(Orders[Order Date])=2022)
+-> Corporateprofit = CALCULATE(SUM(Orders[Profit]),Orders[Segment]="Corporate")
+
+#Note:
+- You can combine all the condition in the single function:
+- For Examples:
+2022corporateprofit = CALCULATE(SUM(Orders[Profit]), (alt + Enter)
+YEAR(Orders[Order Date])=2022,Orders[Segment]="Corporate")
+
+# Additional Note:
+- We can easily replace many function of excel , with the help of Calculate function:
+- For E.g, - Sumif, Sumifs, Countif, Countifs, Averageif, Averageifs etc, 
+        more functions like - Maxif, Maxifs, Minif, Minifs etc.
+
+* With count aggregation:
+-> Count of Technology = CALCULATE(COUNT(Orders[Profit]),Orders[Category]="Technology")
+-> Averageprofit of Technology = CALCULATE(Average(Orders[Profit]),Orders[Category]="Technology")
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+visualization>table
+column>
+Region,
+Profit,
+Techprofit,
+2022Profit,
+2022corporateprofit,
+corporateprofit
+
+
+format ur visual>
+value>font-size20
+
+column header>font-size 20
+
+
+
+new sheet
+visualization>table
+column>
+Region,
+Profit,
+Countoftechnology
+
+format ur visual>
+value>font-size20
+column header>font-size 20

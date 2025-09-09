@@ -1,0 +1,92 @@
+Question 1: Calculate the Total Sales for the "West" Region.
+
+Question 2: Calculate the Total Profit for "Technology" Category.
+
+Question 3: Find Total Sales in the Year 2024.
+
+Question 4: Calculate Total Sales Where Discount Was Greater Than 20%.
+
+Question 5: Count the Number of Orders with Sales > 1000.
+
+Question 6: Calculate Total Quantity Sold in "South" Region for the Year 2023.
+
+Question 7: Count Orders in "East" Region Where Profit < 0.
+
+Question 8: Total Profit for Orders with Sales Between 500 and 1000.
+
+Question 9: You have a column OrderDate (type: Date). Create a new column that shows the date in the format DD-MMM-YYYY (e.g., 25-Jul-2025).
+
+Question 10: Group sales by ProductCategory and Year, and calculate total quantity sold.
+
+Question 11: Identify Late Shipments (>5 days)																							
+1)
+Total Sales West = 
+CALCULATE(
+    SUM('Orders'[Sales]),
+    'Orders'[Region] = "West"
+)
+
+2)
+Profit Technology = 
+CALCULATE(
+    SUM('Orders'[Profit]),
+    'Orders'[Category] = "Technology"
+)
+
+3)
+Sales in 2024 = 
+CALCULATE(
+    SUM('Orders'[Sales]),
+    YEAR('Orders'[Order Date]) = 2024
+)																																																4)
+Total Sales Discount Over 20% = 
+CALCULATE(
+    SUM(Sales[SalesAmount]),
+    Sales[Discount] > 0.20
+)
+
+5)												
+CALCULATE(
+    COUNTROWS('Orders'),
+    FILTER('Orders', 'Orders'[Sales] > 1000)
+)
+
+6)
+South Quantity 2023 = 																					
+CALCULATE(
+    SUM('Orders'[Quantity]),
+    'Orders'[Region] = "South",
+    YEAR('Orders'[Order Date]) = 2023
+)
+
+7)
+East Loss Orders = 
+CALCULATE(
+    COUNTROWS('Orders'),
+    FILTER('Orders', 																	
+        'Orders'[Region] = "East" && 'Orders'[Profit] < 0
+    )
+																								8)																								
+Mid Range Sales Profit = 
+CALCULATE(
+    SUM('Orders'[Profit]),
+    FILTER('Orders',
+        'Orders'[Sales] >= 500 && 'Orders'[Sales] <= 1000
+    )
+)
+
+9)
+Formatted Order Date = TEXT('Sales'[OrderDate], "DD-MMM-YYYY")
+
+10)
+CategoryYearSummary =
+SUMMARIZE(
+    Sales,
+    Sales[ProductCategory],
+    Sales[Year],
+    "Total Quantity", SUM(Sales[Quantity])
+)
+
+11)
+Is Late Shipment = 
+IF(DATEDIFF(Orders[Order Date], Orders[Ship Date], DAY) > 5, "Late", "On Time")

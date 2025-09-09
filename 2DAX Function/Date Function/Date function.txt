@@ -1,0 +1,28 @@
+load 1. DateSample.xlsx
+
+orders 
+Day1 = DAY(Orders[Order Date].[Date])
+
+Day2 = Orders[Order Date].[Day]
+
+Month1 = MONTH(Orders[Order Date].[Date])
+
+Month2 = Orders[Order Date].[Month]
+
+Quater1 = QUARTER(Orders[Order Date].[Date])
+
+Quarter2 = Orders[Order Date].[Quarter]
+
+Date1 = Orders[Order Date].[Date]
+
+Weekday1 = WEEKDAY(Orders[Order Date].[Date],2)
+
+WeekNum = WEEKNUM(Orders[Order Date])
+
+Today1 = TODAY()
+
+Now1 = NOW()
+
+Year2 = YEAR(Orders[Order Date].[Date])
+
+Year3 = Orders[Order Date].[Year]

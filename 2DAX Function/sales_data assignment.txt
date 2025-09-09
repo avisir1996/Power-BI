@@ -1,0 +1,42 @@
+Create a measure that calculates Year-to-Date (YTD) Sales for the current year.
+or
+Calculate total sales from the beginning of the year up to the current date.
+
+Create a measure that calculates total sales for Electronics only
+
+How many unique customers are there?
+
+Get total sales from the start of the current month to today.
+
+Calculate QTD sales.
+
+
+YTD Sales :=
+CALCULATE(
+    SUM(Sales[SalesAmount]),
+    DATESYTD(Sales[OrderDate])
+)
+
+
+Electronics Sales = 
+CALCULATE(
+    SUM(sales_data[SalesAmount]),
+    sales_data[ProductCategory] = "Electronics"
+)
+
+
+Customer Count := DISTINCTCOUNT(Sales[CustomerName])
+
+
+MTD Sales = 
+CALCULATE(
+    SUM(sales_data[SalesAmount]),
+    DATESMTD('sales_data'[OrderDate])
+)
+
+
+QTD Sales = 
+CALCULATE(
+    SUM(sales_data[SalesAmount]),
+    DATESQTD(sales_data[OrderDate])
+)

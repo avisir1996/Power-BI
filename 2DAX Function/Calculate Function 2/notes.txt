@@ -1,0 +1,70 @@
+Goal: Total Sales for a specific Region (e.g., "West").
+
+sumif=>
+new measure
+Sales_West = CALCULATE(
+    SUM('Orders'[Sales]),
+    'Orders'[Region] = "West"
+)
+
+visualization>card>
+values>Sales_west
+-----------------------------------
+
+sumifs=>
+Sales_West_Furniture = CALCULATE(
+    SUM('Orders'[Sales]),
+    'Orders'[Region] = "West",
+    'Orders'[Category] = "Furniture"
+)
+
+visualization>card>
+values>Sales_West_Furniture
+---------------------------------
+
+Assignment
+same as =>Countif, Countifs, Averageif, Averageifs etc, 
+
+
+
+
+
+------------------------------------------------
+
+Goal:
+Find the maximum Sales value where Region = "West".
+Max_Sales_West = CALCULATE(
+    MAX('Orders'[Sales]),
+    'Orders'[Region] = "West"
+)
+
+visualization>card>
+values>Max_Sales_West
+
+----------------------------------------------
+Max_Sales_West_Furniture = CALCULATE(
+    MAX('Orders'[Sales]),
+    'Orders'[Region] = "West",
+    'Orders'[Category] = "Furniture"
+)
+visualization>card>
+values>Max_Sales_West_Furniture
+
+
+----------------------------------------------
+Goal:
+Find the maximum Sales for Technology category in 2022.
+Max_Sales_Tech_2022 = CALCULATE(
+    MAX('Orders'[Sales]),
+    'Orders'[Category] = "Technology",
+    YEAR('Orders'[Order Date]) = 2022
+)
+
+visualization>card>
+values>Max_Sales_Tech_2022
+
+------------------------------------------
+
+Assignment
+
+same as =>Minif, Minifs 

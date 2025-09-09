@@ -1,0 +1,17 @@
+
+[6] Information Function :-
+new column
+
+isblank 
+IsSalesBlank = IF(ISBLANK([Sales]), "No Sale", [Sales])
+
+
+isnumber
+istext
+isnontext
+
+iferror
+RevenuePerUnit = IFERROR([Sales] / [UnitsSold], 0)
+
+In
+IsTopProduct = IF([Product] IN {"Laptop", "Tablet", "Phone"}, "Top", "Other")

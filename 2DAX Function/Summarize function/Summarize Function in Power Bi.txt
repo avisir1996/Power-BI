@@ -1,0 +1,47 @@
+SUMMARIZE DAX function is used to group data and create a summary table based on specified columns and optional calculated columns.
+
+Purpose of SUMMARIZE:
+To return a summary table based on one or more grouping columns, and optionally, calculated columns using aggregation (like SUM, COUNT, etc.).
+
+
+Example 1: Summarize Sales and Profit by Category
+
+load samplesuperstore data
+home tab>new table
+
+SummaryTable = 
+SUMMARIZE(
+    'Orders',
+    'Orders'[Category],
+    "Total Sales", SUM('Orders'[Sales]),
+    "Total Profit", SUM('Orders'[Profit])
+)
+
+report view=>
+table>
+column>
+category,total profit,total sales
+format ur visuals
+values >font-size:20
+column header>font-size:20
+
+
+Example 2: Summarize by Category and Sub-Category
+home tab>new table
+
+SubCategorySummary = 
+SUMMARIZE(
+    'Orders',
+    'Orders'[Category],
+    'Orders'[Sub-Category],
+    "Sales", SUM('Orders'[Sales])
+)
+
+report view=>
+new sheet
+table>
+column>category,subcategory,sales
+
+format ur visuals
+values >font-size:15
+column header>font-size:20

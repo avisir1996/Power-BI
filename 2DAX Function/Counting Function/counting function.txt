@@ -1,0 +1,19 @@
+Counting Function :-
+
+(a) count
+(b) distinctcount
+(c) countx
+(d) sumx
+
+
+(a) count 
+Example : count 1 = COUNT(Sheet1[Product]) 
+
+(b) DISTINCTCOUNT
+Example : count 2 = DISTINCTCOUNT(Sheet1[Product])
+
+(c) countx 
+Example :- count3 = COUNTX(FILTER(Sheet1,Sheet1[Qty] > 10 ) , Sheet1[Price] )
+  
+(D) sumx 
+Example :- Total Revenue = SUMX(Sheet1,Sheet1[Qty] * Sheet1[Price] )

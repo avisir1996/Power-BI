@@ -1,0 +1,26 @@
+load 5. Logical3.xlsx
+orders>
+
+Day = WEEKDAY(Orders[Order Date].[Date],1)
+1 means sunday 
+2 means monday
+3 means tuesday
+
+
+Result = SWITCH(2,1,"one",2,"two",3,"three","Invalid")
+
+
+NameofDay = SWITCH(Orders[Day],
+1,"Sunday",
+2,"Monday",
+3,"Tuesday",
+4,"Wednesday",
+5,"Thursday",
+6,"Friday",
+7,"Saturday",
+"Invalid")
+
+measures
+TotalSales = SUM(Orders[Sales])
+
+MinSales = MIN(Orders[Sales])

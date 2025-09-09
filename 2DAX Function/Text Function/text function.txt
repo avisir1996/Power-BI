@@ -1,0 +1,31 @@
+# Basic Text Function: (Cleaning, Consistency of data) -> P1
+- Upper
+- Lower
+- Left
+- Right
+- Mid
+- Trim
+- Length
+- Concatenate
+- Search
+- Subsitute
+- containsstring
+
+-> Connect to Data (Textfunction.xlsx)
+
+1. Upper = UPPER(Text1Data[Customer Name])
+2. Lower = LOWER(Text1Data[Customer Name])
+3. Left = LEFT(Text1Data[Product ID],3)
+4. Right = RIGHT(Text1Data[Product ID],8)
+5. Mid = MID(Text1Data[Product ID],5,2) -> Indexing start from 1 in data view.
+6. trim = TRIM(Text2Data[Ship Mode])
+7. Length = LEN(Text1Data[Customer Name])
+8. Concatenate = CONCATENATE(Text2Data[Category],Text2Data[Sub-Category])
+9. Concatenat2 = Text2Data[Category]& " " & Text2Data[Sub-Category] (unique id number in company)
+10. find = SEARCH(" ",Text1Data[Customer Name],1,0)
+11. New_Shipmode = Trim(SUBSTITUTE(Text1Data[Ship Mode],"CLASS","MODE"))
+12. COMBINEVALUES = COMBINEVALUES(",", Text1Data[Left], Text1Data[Mid])
+13. exact = EXACT(Text1Data[Left],Text1Data[Mid]) #returns TRUE if they are exactly the same, otherwise returns FALSE. EXACT is case-sensitive but ignores formatting differences. EXACT is case-sensitive
+14. fixed = FIXED(Text1Data[Profit],2)
+15. replace = REPLACE(Text1Data[Customer Name],2,4,"sakshi")
+16. search2 = CONTAINSSTRING("Hello World","World") #True/False
