@@ -1,0 +1,20 @@
+>get data
+>txt/csv
+>gapminder.csv>
+transform data.
+
+>transform tab
+>select population column
+>statistics try all formula
+
+
+>add column tab
+> select life exp column
+>standard
+>multiple by 0.75 (to get 75% of life exp) and try all formula
+
+>add column tab
+> select gdp_cap column
+>rounding
+>round
+>decimal places 2

@@ -1,0 +1,59 @@
+page 4
+stack bar chart>
+y-axis>category
+x-axis>sales
+
+format ur visual
+visual>data labels>on
+values font
+display unit>none
+value decimal places 0
+
+pie chart>
+legend>region
+values>sales
+
+page 5
+table>
+columns>subcategory,sales
+
+table>
+columns>subcategory,sales
+
+table>
+columns>Order date ka year,sales
+
+table>
+columns>segment,sales
+
+page 6
+table>
+columns>subcategory,sales
+
+table>
+columns>subcategory,sales
+
+
+goto page 5 
+click outside of visual 
+drag category in >add drill through page here
+
+goto page 4 select technology category
+right click>drill through>page 5
+
+same as 
+goto page 4 select furniture category
+right click>drill through>page 5
+
+same as 
+goto page 4 select office suppilies category
+right click>drill through>page 5
+
+
+
+goto page 6
+click outside of visual 
+drag region in >add drill through page here
+
+goto page 4 select any region>right click>drill through>page 6
+

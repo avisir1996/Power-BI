@@ -1,0 +1,15 @@
+stack column chart
+x-axis =>country,BIRTHDATE_MONTH,BIRTHDATE_Quarter,BIRTHDATE_Year,
+y-axis =>sales
+
+view tab>bookmarks
+
+add>double click to rename>country> select country wise chart>update
+add>double click to rename>Month> select Month wise chart>update
+add>double click to rename>Quarter> select Quarter wise chart>update
+add>double click to rename>Year> select Year wise chart>update
+
+goto insert tab
+button>navigator>bookmark navigator
+
+press CTRL and press any button to view button wise sales

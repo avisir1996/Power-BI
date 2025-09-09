@@ -1,0 +1,6 @@
+>Home tab
+>Enter data
+>Enter table name employee
+>Enter the values as shown in screenshot
+>Edit
+>then we can transform/add column as per our need

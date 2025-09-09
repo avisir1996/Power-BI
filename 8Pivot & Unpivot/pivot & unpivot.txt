@@ -1,0 +1,17 @@
+Pivot: Reshaping data by turning columns into rows.
+
+Unpivot:Bringing scattered data together by converting columns into rows.
+
+>excel workbook
+>open cafe_startup.xlsx file
+>transform data
+
+>select column 1 column
+>right click on column 1 column 
+>unpivot other columns
+
+
+>select column 1 column
+>goto transform tab
+>pivot column
+>values column :value

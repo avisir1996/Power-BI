@@ -1,0 +1,88 @@
+Using Visualization
+
+Q.1 How to find highest selling subcategory 
+Q.2 How to find highest profitable subcategory 
+Q.3 How to find highest quantity subcategy
+
+Q.4 How to find which type of category have highest selling subcategory
+Q.5 How to find which type of category have highest Profitable subcategory
+Q.6 How to find which type of category have highest Quantity subcategory
+
+visualization>table
+column =>subcategory>sales>profit>quantity
+
+sum of sales >sort in descending
+u will get subcategory phones as highest selling subcategory
+
+same as
+sum of profit >sort in descending
+u will get subcategory copiers as highest profitable subcategory
+
+same as 
+sum of quantity >sort in descending
+u will get subcategory binders as highest quantity subcategory
+
+Highest selling subcategory =>phones
+Highest profitable subcategory => copiers
+Highest quantity subcategy =>binders
+
+it was easy because we have table
+but we have limited space and client wants answer quickly 
+so we can create card
+
+
+visualization>card>subcategory
+by default 1st subcategory(Accessories) will shown 
+go to filters>
+filters on this visual>
+drag subcategory in > add data field here
+filter type  >top n>top 1>
+by value> drag sales
+apply filters
+
+dobule click on fields>Highest selling
+format visual>Category label>font-size:20
+
+SAME AS
+
+visualization>card>subcategory
+by default 1st subcategory(Accessories) will shown 
+go to filters>
+filters on this visual>
+drag subcategory in > add data field here
+filter type  >top n>top 1>
+by value> drag PROFIT
+apply filters
+
+dobule click on fields>Highest profitable
+format visual>Category label>font-size:20
+
+SAME AS
+
+visualization>card>subcategory
+by default 1st subcategory(Accessories) will shown 
+go to filters>
+filters on this visual>
+drag subcategory in > add data field here
+filter type  >top n>top 1>
+by value> drag QUANTITY
+apply filters
+
+dobule click on fields>Highest quantity
+format visual>Category label>font-size:20
+
+stack column chart>
+x-axis>category
+y-axis>sales
+
+
+
+Q. How to find region & Subcategory wise top 3 Profit
+Multirow Card
+Fields>subcatgory,profit
+goto filters>subcategory>top n>top 3
+by value>profit>apply filters
+
+pie chart>
+legend>region
+values>sales

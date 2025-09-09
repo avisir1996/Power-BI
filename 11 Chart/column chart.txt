@@ -1,0 +1,42 @@
+excel workbook
+>load sample superstore.xlsx file
+>Visualization>stacked column chart
+>drag subcategory in x-axis
+>drag sales in y-axis
+>format your visual all the tabs
+>legends>region column
+>Data label on 
+>goto focus mode
+
+pie chart
+legend region
+values sales
+details label>label contents>all detail labels
+>values >change font size
+
+donut chart
+legend region
+values sales
+legend off
+>values >change font size
+
+funnel chart
+category>sub-category
+values sales
+
+ribbon chart
+select order date column>column tools tab>datatype date
+x axis order date
+y axis sales
+legends region
+format your visuals>data labels
+
+view data and export
+stack column chart
+x axis subcategory
+y axis sales
+legend region
+select data as per screenshot Screenshot (385).png
+click on more options
+export data
+it will download csv file automatically

@@ -1,0 +1,64 @@
+Filter on visual
+
+pie chart>
+legend >region
+values>sales
+
+funnel chart>
+category>subcategory
+values>sales
+
+
+click on pie chart>format on this visual
+drag category in add date field here
+select any category
+only pie chart sales value is changing
+
+same as
+click on funnel chart>format on this visual
+drag segment in add date field here
+select any segment
+only segment chart sales value is changing
+
+
+
+
+
+filter on page
+
+pie chart>
+legend>region
+values>profit
+
+table>
+column>segment,sales
+
+table>
+column>order_date,profit
+right click on order_date>order date
+
+
+drag customer name >drop in filter on this page
+drag segment name >drop in filter on this page
+
+
+
+Filters on all pages
+
+table>
+column>category,sales
+
+stack bar chart>
+y-axis>subcategory
+x-axis>sales
+
+copy both chart>
+paste in other page
+
+go to>filters
+filters on all pages>
+drag category in >add data field here
+select any category
+
+so filters apply on all pages
+ 

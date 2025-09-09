@@ -1,0 +1,42 @@
+Data Modeling
+
+Q.1) Which product color how much qty is sold?
+Q.2) Find total sales (order qty) *product(productprice)
+
+ms excel>home tab>options>add-ins>manage: COM ad-ins>go
+microsoft power pivot for excel>ok
+then power pivot tab created
+
+
+data tab>
+new query>from file>from csv>products.csv>import>load to>only create connection>add this data to the data model>load
+new query>from file>from csv>sales3.csv>import>load to>only create connection>add this data to the data model>load
+new query>from file>from csv>territories.csv>import>load to>only create connection>add this data to the data model>load
+
+goto power pivot tab>manage
+click on diagram view as per screenshot 442
+
+create relationship as per screenshot 443
+
+home tab>pivot table>pivot table>new worksheet>
+product color>rows>
+order qty >values
+region>column
+
+
+
+powerbi
+get data>products>load
+get data>sales>load
+get data>terroteries>load
+
+matrix>
+
+rows>product color
+column>region
+values >order qty
+
+then
+take stacked column chart
+x-axis>product color
+y-axis>order qty

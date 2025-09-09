@@ -1,0 +1,13 @@
+>get data
+>text/csv
+>zomato.csv
+>transform data
+
+>select aggregate rating column
+>right click on the column
+>move
+>to  end
+
+>add column
+>condition column
+>follow as per screenshot

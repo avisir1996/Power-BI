@@ -1,0 +1,7 @@
+>get data
+>text/csv
+>Select Customers_Data 
+>Transform Data
+>Drag Birthdate column in the last
+>Goto Transform Tab
+>Date & Time Column and try all functions

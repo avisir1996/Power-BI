@@ -1,0 +1,52 @@
+goto powerbi>get data>text/csv
+>select Customers_Data.csv File
+Transform Data
+
+if u want to change the data in existing column then goto transform tab
+if u want to change the data in new column then goto add column tab
+
+select email address column>
+goto add column tab
+click extract tool>
+>text before delimeter
+>@ then ok
+it will add new column in the last with text before delimeter column name
+we can rename column name on double clicking on clumn name
+
+
+
+then select marital status column>
+goto transform tab>format>lowercase and many more
+
+>then select first name and last name column
+>add column tab>merge columns
+seperator>space
+>new column name>fullname
+
+then format>capitalize each word 
+
+
+
+
+
+
+goto powerbi>
+get data >excel workbook>
+africa.xlsx>transform data
+
+select restroname,address column
+goto transform tab>split column by delimeter>
+advanced options>
+number of columns 3
+quote character none
+
+
+select city column
+goto transform tab
+replace values
+value fo find e
+replace with A
+
+then goto >
+power query editor>
+close and apply

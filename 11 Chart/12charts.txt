@@ -1,0 +1,29 @@
+
+       -> Basic chats in PowerBi Desktop :- 
+
+         -> column chart :- 
+ 
+               -> A column chart in Power BI is a data visualization that presents information in a column-based format. It is a popular chart type used for displaying categorical data and comparing values across different categories or time periods. Column charts are particularly useful for showing trends, comparisons, and distributions in your data.
+
+
+         -> staked column chart :- 
+
+               -> A stacked column chart in Power BI displays data as vertical columns where values are stacked on top of each other within each category. It helps visualize both the total and the relative contributions of individual elements to the whole, making it useful for showing composition and trends within different categories.
+
+         -> pie chart :- 
+
+               -> A pie chart in Power BI is a circular chart that visually represents data as slices of a pie, where each slice represents a portion or percentage of a whole. It's useful for displaying the distribution of a single category or showing the relative proportions of different categories in a simple and intuitive way.
+
+         -> donut chart :-
+
+               -> A donut chart in Power BI is a circular data visualization that represents data as a ring with slices. It's used to show the proportion of each category within a whole, similar to a pie chart but with a hole in the center. Donut charts are effective for illustrating data distribution and making it easy to see the relative sizes of different segments in a visually appealing way.
+
+
+         -> funnal chart :- 
+
+               -> A funnel chart in Power BI is a visual tool that illustrates a step-by-step process or conversion, with categories represented as progressively narrowing or widening bars. It's commonly used to show how data points move through different stages of a process, such as a sales pipeline or customer conversion journey, making it easy to identify drop-offs or bottlenecks in the process.
+
+
+         -> Ribbon chart :-   
+
+               -> A ribbon chart in Power BI is a specialized data visualization that displays data in a horizontal ribbon-like format. It's often used to show the flow or progression of data across a sequence of categories, making it easy to identify patterns, trends, and comparisons in a visually engaging way.

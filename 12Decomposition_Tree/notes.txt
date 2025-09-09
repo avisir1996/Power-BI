@@ -1,0 +1,4 @@
+decomposition tree>
+analyze> sales
+explain by >region,city,segment,category,subcategory
+click on + symbol to ellaborate more

@@ -1,0 +1,22 @@
+>get data>text/csv>STUDENT_DATA.csv>transform data
+>get data>text/csv>RESULT_DATA.csv>transform data
+
+select
+Srno. column in products table
+home tab>merge queries as new  
+and try all joins
+
+
+>get data
+>excel workbook
+>asia.xlsx
+transform data
+
+>get data
+>excel workbook
+>africa.xlsx
+transform data
+
+home tab
+append queries as new
+automatically add all the rows in one table 
