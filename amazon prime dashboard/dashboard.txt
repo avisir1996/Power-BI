@@ -1,0 +1,91 @@
+get data>text csv>load
+>format your report page as per Screenshot (54) 
+>canvas background>color>more colors>#19222D
+>transparency 0%
+
+
+to enable map>
+file>options & setting>options>security>check the checkbox(use map and filled map visuals)
+
+>select filled map chart>location country>
+tooltip >show_id>right click on show_id (in tooltip)select count(distinct)>filters>country us (all) down arrow>select all wala checkbox except first(9015 wala)
+format ur visuals?map settings>style dark
+format ur visual>general>effect>background #19222d>visual border white>rounder corners 20>title font-size 16>text color white>horizontal alignment center>title >text >Total Shows By Country>divider on>color white.....
+
+
+
+select donut chart>legend type>
+go to filters>type is all>select only movie and tv shows
+>values show_id>right click on show id and select count (distinct)
+>format ur visual>general >title>text moovie and tv shows>font size 16>text color white>horizontal alignment center
+>divider color white
+>effects>background color #19222D
+>visual border color white> rounded corners 20px
+>visual>details label>values color white
+>legend text color white
+>slices color movie #00ABE1 tv shows #a0d1ff
+
+
+select area chart>x-axis release year>y-axis show id>right click on show id and select count (distinct)>legend type
+format ur visuals>
+x-axis title off>values>color white
+y-axis title off>values>color white
+general >>effects>background color #19222D
+title Total Shows By Release Year >font size 16>text color white>horizontal alignment center
+>divider color white
+>visual>legend text color white
+>lines >colors> movie #00ABE1 tv shows #a0d1ff
+>visuals>effects>visual border color white>rounded corners 20px
+>x-axis>range>maximum >2021
+
+
+goto insert tab>images>prime video logo>general >effects>visual border color white>>rounded corners 20px
+
+
+stacked bar chart>y-axis rating>x-axis show id>right click on show id and select count (distinct)>
+general >effects>background color #19222D
+visual border color white >rounded corners 20px
+Ratings By Total Shows>font size 16>text color white>horizontal alignment center
+>divider color white
+visuals>y-axis>values>color white
+visuals>x-axis>values>color white
+data labels>value>color white
+
+
+copy paste stacked bar chart
+y-axis>listed in
+goto filters>count of show id >select all checkbox>deselect null values
+format ur visuals>title Genres By Total Shows
+
+
+select card>fields title>right click and select count (distinct)>
+category label off
+general >effects>background color #19222D
+visual border color white >rounded corners 20px
+visual>callout value>color white>font-size 30
+general>title Total Titles>text color #00ABE1>font-size 20>horizontal alignment center
+
+
+copy paste cards by 5 times
+format >align>distribute horizontally
+select all 6 cards >format >group
+
+2nd card
+fields >rating>right click and select count (distinct)>
+format ur visuals>title>total ratings
+
+3rd card
+fields >listed in>right click and select count (distinct)>
+format ur visuals>title>total Genres
+
+4th card
+fields >Directors>right click and select count (distinct)>
+format ur visuals>title>Total Directors
+
+5th card
+fields >Release year>right click and select min>
+format ur visuals>title>Start Date
+
+6th card
+fields >Release year>right click and select max>
+format ur visuals>title>End Date

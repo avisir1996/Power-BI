@@ -1,0 +1,132 @@
+🚀 Project Idea: Retail Sales & Profit Analysis Dashboard
+Objective
+Build an interactive dashboard for a retail company to track sales performance, profit, and customer insights across different regions, products, and time periods.
+
+Key Features to Implement
+KPIs (Cards):
+
+Total Sales
+
+Total Profit
+
+Profit Margin %
+
+Total Orders
+
+Visuals:
+
+Sales Trend Over Time → Line/Area chart showing monthly/quarterly sales.
+
+Profit by Region → Map or bar chart.
+
+Sales by Category & Sub-Category → Hierarchical bar chart.
+
+Top 10 Products by Sales → Horizontal bar chart.
+
+Customer Segmentation → Pie chart or donut chart for consumer, corporate, small business, etc.
+
+Filters / Slicers:
+
+Date range
+
+Region
+
+Category
+
+Customer Segment
+
+Drill-Through Pages:
+
+Product details
+
+Customer-level performance
+
+
+--------------------------------------
+
+🔹 Step 1: Load Data
+Open Power BI Desktop.
+
+Go to Home → Get Data → Text/CSV.
+
+Select the file superstore_sales_sample.csv.
+
+Click Load.
+
+🔹 Step 2: Data Preparation
+In Data view, check column data types:
+
+Order Date, Ship Date → Date
+
+Sales, Profit, Discount → Decimal Number
+
+Quantity → Whole Number
+
+Create a Date Table (for time intelligence):
+
+Go to Modeling → New Table
+
+DateTable = CALENDAR(MIN('superstore_sales_sample'[Order Date]), MAX('superstore_sales_sample'[Order Date]))
+Mark as Date Table using Date.
+
+🔹 Step 3: Create Measures (KPIs)
+Go to Modeling → New Measure and add:
+
+Total Sales
+
+Total Sales = SUM('superstore_sales_sample'[Sales])
+Total Profit
+
+Total Profit = SUM('superstore_sales_sample'[Profit])
+Profit Margin %
+
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+Total Orders
+
+Total Orders = DISTINCTCOUNT('superstore_sales_sample'[Order ID])
+🔹 Step 4: Build Visuals
+On the Report page, insert visuals:
+
+Cards → Show Total Sales, Total Profit, Profit Margin %, Total Orders.
+
+Line Chart → Order Date on X-axis, Total Sales on Y-axis.
+
+Map / Filled Map → Region for Location, Total Profit for Values.
+
+Stacked Bar Chart → Category → Sub-Category, Values = Total Sales.
+
+Top 10 Products → Use Product Name with Total Sales, apply Top N filter (Top 10 by Sales).
+
+Pie/Donut Chart → Segment with Total Sales.
+
+🔹 Step 5: Add Filters & Slicers
+Insert Slicers for:
+
+Date (Order Date)
+
+Region
+
+Category
+
+Segment
+
+🔹 Step 6: Drill-Through Pages
+Create a new page.
+
+Add visuals (e.g., product-level sales and profit).
+
+Drag Product Name to Drill-through filter.
+
+Now, users can right-click a product → Drill-through → Product Details.
+
+🔹 Step 7: Dashboard Formatting
+Use consistent colors (e.g., blue/green for positive, red for negative profit).
+
+Add titles and background shapes for sections.
+
+Add a dashboard title at the top: "Retail Sales & Profit Dashboard".
+
+
+
+
+

@@ -1,0 +1,23 @@
+Q.1) From your Stacked Column Chart, which Sub-Category dominates sales in each Category?
+
+Q.2) From the Pie Chart, which Region contributes the least profit share?
+
+Q.3) Looking at the Line Chart, identify the year with the lowest sales.
+
+Q.4) From the Bar Chart, list the Top 3 Sub-Categories by sales.
+
+Q.5) Compare the Consumer, Corporate, and Home Office Segments:
+	Which segment brings the highest sales?
+	Which one has the lowest profit?
+
+Q.6) Using the Map Chart, identify the Top 3 States with the highest sales and the Bottom 3 States with the lowest sales.
+
+Q.7) Which Sub-Category contributes the most sales within the Technology category?
+
+Q.8) Which Region has the highest share of profit (from the Pie Chart)?
+
+Q.9) From your Line Chart, in which year did sales peak?
+
+Q.10) Looking at your Bar Chart, which Sub-Category ranks #1 in sales?
+
+Q.11) From your Map Chart, which State shows the lowest sales?
